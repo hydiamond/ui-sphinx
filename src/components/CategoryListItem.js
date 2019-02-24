@@ -14,7 +14,7 @@ export default class CategoryListItem extends React.Component {
             </View>
             <View style={styles.wrapContent}>
                 <Text style={styles.title}>Original blend coffee </Text>
-                <Text>Free 1 cup</Text>
+                <Text style={styles.content}>Free 1 cup</Text>
                 <Text style={styles.exprieDate}>Expired date: 2018/11/06</Text>
             </View>
             
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     categoryImg:{
         width:93,
         height:93,
+        borderRadius:4
     },
     wrapImg:{
         paddingLeft:8
@@ -51,9 +52,13 @@ const styles = StyleSheet.create({
         fontSize:16
     },
     wrapContent:{
-        paddingLeft:8
+        paddingLeft:8,
+        marginBottom:20,
     },
     exprieDate:{
-        fontSize:12
+        fontSize:12,
+    },
+    content:{
+        marginBottom:6
     }
 })

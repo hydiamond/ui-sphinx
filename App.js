@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import CategoryListItem from './src/components/CategoryListItem';
-
+import ExampleModal from './src/components/ModalExample';
 export default class App extends React.Component {
   render() {
     return (
@@ -10,9 +10,8 @@ export default class App extends React.Component {
           <Text>This is Slider !!</Text>
         </View>
         <View style={styles.container1}>
-        <CategoryListItem></CategoryListItem>
-        <CategoryListItem></CategoryListItem>
-        <CategoryListItem></CategoryListItem>
+          <ExampleModal></ExampleModal>
+          <CategoryListItem></CategoryListItem>
       </View>
       </View>
       
