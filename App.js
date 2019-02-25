@@ -10,7 +10,9 @@ export default class App extends React.Component {
           <Text>This is Slider !!</Text>
         </View>
         <View style={styles.container1}>
-          <ExampleModal></ExampleModal>
+          <CategoryListItem></CategoryListItem>
+          <CategoryListItem></CategoryListItem>
+          <CategoryListItem></CategoryListItem>
           <CategoryListItem></CategoryListItem>
       </View>
       </View>
@@ -33,7 +35,6 @@ const styles = StyleSheet.create({
   },
   container1: {
     flex:1,
-    justifyContent: 'center',
     paddingLeft: 8,
     paddingRight: 8,
     alignItems: 'stretch',

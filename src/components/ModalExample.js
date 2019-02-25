@@ -21,9 +21,9 @@ export default class ExampleModal extends React.Component {
             <Text style={styles.title}>Please show this screen for the Store’s staff </Text>
             <Image style={{height:140,marginTop:25,width:400,borderRadius:4}} source={ImgCategory}/>
             <View style={styles.wrapcontent}>
-                <Text>Original blend coffee </Text>
-                <Text>Free 1 cup</Text>
-                <Text>Expired date: 2018/11/06</Text>
+                <Text style={{fontSize:16}}>Original blend coffee </Text>
+                <Text style={{fontSize:16,color:'blue'}}>Free 1 cup</Text>
+                <Text style={{fontSize:12}}>Expired date: 2018/11/06</Text>
             </View>
             <View style={styles.wrapDetail}>
                 <View>
@@ -91,8 +91,6 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       borderRadius: 8,
       marginTop: 42,
-      paddingLeft:16,
-      paddingRight:16,
       marginBottom: 56,
       borderColor: 'rgba(0, 0, 0, 0.1)',
     },
@@ -109,10 +107,14 @@ const styles = StyleSheet.create({
     },
     wrapDetail:{
         marginTop:11,
-        marginBottom:8
+        marginBottom:8,
+        paddingLeft:16,
+        paddingRight:16
     },
     wrapDetail1:{
-        marginBottom:8
+        marginBottom:8,
+        paddingLeft: 16,
+        paddingRight: 16,
     },
 
     titleDetails:{
@@ -130,6 +132,8 @@ const styles = StyleSheet.create({
         marginTop:10,
         marginBottom:16,
         borderBottomWidth :1,
+        paddingBottom: 16,
         borderBottomColor: 'gray',
+        alignSelf: 'stretch',
     }
   });
