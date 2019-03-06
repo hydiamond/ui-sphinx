@@ -2,8 +2,22 @@
  * @format
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
+import React, { Component } from 'react';
+import { AppRegistry, View, Text } from 'react-native';
+import { Provider } from "react-redux";
+// import App from './App';
+import store from "./store";
+import ContactForm from './components/ContactForm';
 
-import {AppRegistry} from 'react-native';
-import App from './App';
+
+export default class App extends Component {
+    render() {
+        return (
+            <Provider store={store}>
+                <ContactForm/>
+            </Provider>
+        );
+    }
+};
 
 AppRegistry.registerComponent("AwesomeProject", () => App);
