@@ -1,20 +1,12 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import CategoryListItem from './src/components/CategoryListItem';
-import ExampleModal from './src/components/ModalExample';
-import NewListItem from './src/components/NewListItem';
+import { StyleSheet, View } from 'react-native';
+import Button from './components/Button';
 export default class App1 extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.container0}>
-          <Text>This is Slider !!</Text>
-        </View>
-        <View style={styles.container1}>
-          
+      <View>
+        <Button>Click me</Button>
       </View>
-      </View>
-      
     )
   };
 }
@@ -23,7 +15,8 @@ const styles = StyleSheet.create({
   container:{
     flexDirection: 'column',
     flex:1,
-    alignItems:'stretch'
+    alignItems:'stretch',
+    position: 'absolute',
   },
   container0:{
     height:155,
